@@ -52,6 +52,17 @@
       <p id="uv-error"></p>
       <pre id="uv-error-code"></pre>
     </div>
+    <script>
+  function updateTime() {
+  var widget = document.getElementById("timetxt");
+  var now = new Date();
+  var date = now.toDateString();
+  var time = now.toLocaleTimeString();
+  widget.innerHTML =  time +"<br>" +  date;
+}
+
+setInterval(updateTime, 1000);
+</script>
     <footer>
           <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
     </footer>
