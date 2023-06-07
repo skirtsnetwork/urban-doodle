@@ -3,6 +3,8 @@
   "main": "lib/index.js",
   "version": "1.0.2",
   "type": "module",
+  "scripts": {
+    "start": "node server.js"
   "files": [
     "public",
     "lib"
